@@ -1,129 +1,50 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.part1 {
-    background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
+.container {
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 {
     display: flex;
+    flex-wrap: wrap;
+    background-color: pink;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    align-items: center;
 }
 
-ul {
-    cursor: pointer;
-    list-style: none;
-    color: black;
-    position: fixed;
-    padding: 200px 0px 0px 40px;
-    line-height: 30px;
+.item1 {
+    box-shadow: 1px 1px 1px 1px #888888;
 }
 
-
-/* li {
-            list-style: circle;
-            color: blanchedalmond;
-            line-height: 30px;
-    
-        } */
-
-#avg {
-    font-size: 40px;
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    position: relative;
+    gap: 10px;
 }
 
-button {
-    background-color: grey;
-    padding: 20px;
-    width: 30%;
-    margin-top: 10px;
-}
-
-a {
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    font-weight: bold;
-}
-
-.sub {
-    color: white;
-    text-align: center;
-    line-height: 50px;
-    font-size: 20px;
-    padding: 250px;
-}
-
-.part2 {
-    background-image: url(https://st.depositphotos.com/1428083/2946/i/600/depositphotos_29460297-stock-photo-bird-cage.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-    width: 100%;
-}
-
-.sub1 {
-    position: absolute;
+.box3 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    justify-content: center;
+    gap: 50px;
     padding: 40px;
-    margin: 20vh 10vw 70vh 60vw;
-    background-color: white;
+    align-items: center
 }
 
-.part3 {
-    background-image: url(https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-}
-
-.part4 {
-    background-image: url(https://images3.alphacoders.com/823/thumb-1920-82317.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-}
-
-.part5 {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRTOka7yiD9kwnZGsEZR6-w40z2R9obqb8-g&usqp=CAU);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-}
-
-.part6 {
-    background-image: url(https://wallpapercave.com/wp/wp2904877.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-}
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: black;
-    border-radius: 50%;
-    display: inline-table;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-    background-color: white;
-}
-
-.part7 {
-    background-image: url(https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100%;
-    text-align: center;
+.box4 {
+    margin-top: 5px;
+    overflow: hidden;
 }
