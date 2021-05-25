@@ -1,50 +1,102 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
-.container {
-    display: flexbox;
-    align-items: center;
-    justify-content: center;
-}
-
-.box1 {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: pink;
-    justify-content: center;
-    gap: 50px;
-    padding: 50px;
-    align-items: center;
-}
-
-.item1 {
-    box-shadow: 1px 1px 1px 1px #888888;
-}
-
-.box2 {
+.part1 {
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    background: fixed;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    margin-top: 5px;
-    position: relative;
-    gap: 10px;
 }
 
-.box3 {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: whitesmoke;
+ul {
+    cursor: pointer;
+    list-style: none;
+    color: black;
+    position: fixed;
+    line-height: 50px;
+    margin: 0px 0px;
+}
+
+button {
+    background-color: #567;
+    cursor: pointer;
+    padding: 20px;
+    width: 30%;
+    margin-top: 10px;
+}
+
+a {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+p {
+    color: #555;
+    font-family: "archivo narrow", helvetica, sans-serif;
+}
+
+.sub {
+    display: block;
+    color: white;
     justify-content: center;
-    gap: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.part2 {
+    background-image: url(https://st.depositphotos.com/1428083/2946/i/600/depositphotos_29460297-stock-photo-bird-cage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+.sub1 {
+    position: absolute;
     padding: 40px;
-    align-items: center
+    margin: 20vh 10vw 70vh 60vw;
+    background-color: white;
+    background-attachment: fixed;
 }
 
-.box4 {
-    margin-top: 5px;
-    overflow: hidden;
+.dot {
+    display: block;
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    padding: 5px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: -650px;
+    margin-top: 20px;
+    border: 5px solid black;
+    transition: background-color 0.6s ease;
+    transform: ;
+}
+
+.active,
+.dot:hover {
+    background-color: white;
+}
+
+.epf {
+    background-color: transparent;
+    transition: all .4s cubic-bezier(.7, 0, .3, 1);
+}
+
+footer {
+    display: flex;
+    height: 300px;
+    margin-left: 200px;
+    padding: 80px;
 }
